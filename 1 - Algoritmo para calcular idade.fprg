@@ -1,36 +1,38 @@
-<?xml version="1.0"?>
-<flowgorithm fileversion="3.0">
-    <attributes>
-        <attribute name="name" value=""/>
-        <attribute name="authors" value="Lab1_09"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-03-01 09:21:07 "/>
-        <attribute name="created" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMDk6MTU6MDIgIjsyODE0"/>
-        <attribute name="edited" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMDk6MjE6MDcgIjsxOzI5MjQ="/>
-    </attributes>
-    <function name="Main" type="None" variable="">
-        <parameters/>
-        <body>
-            <declare name="nota1" type="Real" array="False" size=""/>
-            <declare name="nota2" type="Real" array="False" size=""/>
-            <declare name="nota3" type="Real" array="False" size=""/>
-            <declare name="nota4" type="Real" array="False" size=""/>
-            <declare name="soma" type="Real" array="False" size=""/>
-            <declare name="media" type="Real" array="False" size=""/>
-            <input variable="nota1"/>
-            <input variable="nota2"/>
-            <input variable="nota3"/>
-            <input variable="nota4"/>
-            <assign variable="soma" expression="nota1+nota2+nota3+nota4"/>
-            <assign variable="media" expression="soma/4"/>
-            <if expression="media&gt;=6">
-                <then>
-                    <output expression="&quot;Aluno APROVADO com a Nota &quot; &amp; media" newline="True"/>
-                </then>
-                <else>
-                    <output expression="&quot;Aluno REPROVADO com a Nota &quot; &amp; media" newline="True"/>
-                </else>
-            </if>
-        </body>
-    </function>
-</flowgorithm>
+using System;
+
+public class MyProgram
+{
+    public static void Main(string[] args)
+    {
+        double nota1;
+        double nota2;
+        double nota3;
+        double nota4;
+        double soma;
+        double media;
+        
+        nota1 = inputValue();
+        nota2 = inputValue();
+        nota3 = inputValue();
+        nota4 = inputValue();
+        soma = nota1 + nota2 + nota3 + nota4;
+        media = soma / 4;
+        if (media >= 6)
+        {
+            Console.WriteLine("Aluno APROVADO com a Nota " + media);
+        }
+        else
+        {
+            Console.WriteLine("Aluno REPROVADO com a Nota " + media);
+        }
+    }
+    
+    // .NET can only read single characters or entire lines from the
+    // console. The following function safely reads a double value.
+    private static double inputValue()
+    {
+        double result;
+        while (!double.TryParse(Console.ReadLine(), out result));
+        return result;
+    }
+}
