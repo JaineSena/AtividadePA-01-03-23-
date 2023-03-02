@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lab1_09"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 10:00:19 "/>
+        <attribute name="created" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMDk6NTQ6NTggIjsyODI4"/>
+        <attribute name="edited" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMTA6MDA6MTkgIjsxOzI5MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio1" type="Real" array="False" size=""/>
+            <declare name="multiplicacao" type="Real" array="False" size=""/>
+            <input variable="raio1"/>
+            <assign variable="multiplicacao" expression="3.14*(raio1*raio1)"/>
+            <output expression="&quot;&#192;rea da circunfer&#234;ncia &#233; &quot; &amp; multiplicacao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

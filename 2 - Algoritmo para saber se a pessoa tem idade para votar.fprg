@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lab1_09"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 09:45:17 "/>
+        <attribute name="created" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMDk6MjU6MTQgIjsyODE4"/>
+        <attribute name="edited" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMDk6NDU6MTcgIjsxOzI5MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Real" array="False" size=""/>
+            <input variable="idade"/>
+            <if expression="idade&lt;=18">
+                <then>
+                    <output expression="&quot;A pessoa n&#227;o poder&#225; votar pois tem &quot; &amp; idade &amp;&quot; anos&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;A pessoa poder&#225; votar pois tem &quot; &amp; idade&amp; &quot; anos&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

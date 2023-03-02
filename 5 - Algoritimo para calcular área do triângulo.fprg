@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lab1_09"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 10:14:41 "/>
+        <attribute name="created" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMTA6MDY6MzQgIjsyODEx"/>
+        <attribute name="edited" value="TGFiMV8wOTtERVNLVE9QLVNJTkpOVTk7MjAyMy0wMy0wMTsiMTA6MTQ6NDEgIjsxOzI5MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base1" type="Real" array="False" size=""/>
+            <declare name="altura1" type="Real" array="False" size=""/>
+            <input variable="base1"/>
+            <input variable="altura1"/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <assign variable="area" expression="(base1*altura1)/2"/>
+            <output expression="&quot;O c&#225;lculo da &#225;rea &#233; &quot; &amp; area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
